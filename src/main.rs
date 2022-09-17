@@ -1,28 +1,29 @@
 #![allow(non_snake_case)]
-
-use crate::Math::prime;
+//mod ForTest;
 mod Math;
-mod Algorithm;
+//mod Algorithm;
+use rand::Rng;
+
 fn main() {
+    //number list の場合
+    // let number_list = vec![34, 50, 25, 100, 65];
+    // let result = ForTest::largest(&number_list); //ここで借用
+    // println!("The largest number is {}", result);
 
-    let s = String::from("hello");
-    let d = String::from("world");
-
-    let str = d + &s;
-    println!("{}",str);
-    
-    let mut num = 10;
-
-    // for i in (2..=num).step_by(2) {
-    //     println!("{}", i);
-    // }
-        let o = 5;
-    let t = o.to_string();
-    let v: bool = Math::prime(444444444444444);
-    println!("{}", v);
+    // //char listの場合
+    // let char_list = vec!['y', 'm', 'a', 'q'];
+    // let result = ForTest::largest(&char_list);
+    // println!("The largest char is {}", result);
 
 
-    let t: i32 = t.parse().unwrap();
+    let s = Math::prime3(10);
+    println!("{:?}", s);
 
+    let list = Math::sieve(10);
+    println!("{:?}", list);
 
+    let ss: f32 = rand::thread_rng().gen();
+    println!("{}", ss);
+
+    println!("{}", Math::montecarlo(10000));
 }
