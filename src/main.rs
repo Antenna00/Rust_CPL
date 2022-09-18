@@ -15,7 +15,6 @@ fn main() {
     // let result = ForTest::largest(&char_list);
     // println!("The largest char is {}", result);
 
-
     let s = Math::prime3(10);
     println!("{:?}", s);
 
