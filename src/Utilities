@@ -1,1 +1,11 @@
 //utilities library
+
+    //number list の場合
+    // let number_list = vec![34, 50, 25, 100, 65];
+    // let result = ForTest::largest(&number_list); //ここで借用
+    // println!("The largest number is {}", result);
+
+    // //char listの場合
+    // let char_list = vec!['y', 'm', 'a', 'q'];
+    // let result = ForTest::largest(&char_list);
+    // println!("The largest char is {}", result);

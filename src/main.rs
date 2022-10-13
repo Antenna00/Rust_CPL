@@ -1,28 +1,43 @@
 #![allow(non_snake_case)]
-//mod ForTest;
-mod Math;
-//mod Algorithm;
-use rand::Rng;
+mod dfs;
+use proconio::input;
+
+
+
+static ROW: i32 = 5;
+static COL: i32 = 5;
 
 fn main() {
-    //number list の場合
-    // let number_list = vec![34, 50, 25, 100, 65];
-    // let result = ForTest::largest(&number_list); //ここで借用
-    // println!("The largest number is {}", result);
+    // input! {
+    //     N: i32,
+    //     a: [i64; N],
+    // }
+    // let r = [1, 2, 3]
+    //     .iter()
+    //     .map(|color| a.iter()
+    //     .filter(|x| x == &color).count())
+    //     //この時点で: [count1, count2, count3]
+    //     .map(|count| count * (count - 1) / 2)
+    //     .sum::<usize>();
+    
+    let r = [[1,2,3] , [2,3,4]];
+        
 
-    // //char listの場合
-    // let char_list = vec!['y', 'm', 'a', 'q'];
-    // let result = ForTest::largest(&char_list);
-    // println!("The largest char is {}", result);
+    input! {
+        
+    }
 
-    let s = Math::prime3(10);
-    println!("{:?}", s);
 
-    let list = Math::sieve(10);
-    println!("{:?}", list);
 
-    let ss: f32 = rand::thread_rng().gen();
-    println!("{}", ss);
+}
 
-    println!("{}", Math::montecarlo(10000));
+fn a() {
+    let mut bArr:[[i32; ROW]; COL];
+    bArr.iter
+    
+    println!("{}", "hello");
+}
+
+fn isSafe(M:[[i32]; 5], row: i32, col: i32, visited: [[bool]]) {
+    
 }
